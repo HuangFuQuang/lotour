@@ -1,0 +1,115 @@
+/**
+ * Created by PhpStorm.
+ * User: huangfuquang
+ * Date: 2017/1/5
+ * Time: 上午9:12
+ */
+/*顶部部分*/
+header,.search{width: 10.3rem;padding:0;position: relative;margin: 0 auto;}
+header nav{height: .7rem;margin: 0 auto;}
+header nav{width: 99%;background: url(http://img1.lotour.com/2016/index/navbdbg.png) repeat-x 0 bottom;
+box-sizing: border-box;position: absolute;z-index: 99;
+}
+header nav .logo{width: 156px;height: 40px;display: block;float: left;margin-top: 10px;margin-left: 5px;}
+header nav .nav{width: 40%;float: left;margin-left: 5px;position: relative;}
+header nav .nav li{float: left;height: .7rem;text-align: center;line-height: .7rem;}
+header nav .nav li:nth-of-type(1),header nav .nav li:nth-of-type(5),header nav .nav li:nth-of-type(6){width: 11.5%;}
+header nav .nav li:nth-of-type(2),header nav .nav li:nth-of-type(4),header nav .nav li:nth-of-type(7){width: 15.5%;}
+header nav .nav li:nth-of-type(3){width: 18%;}
+header nav .nav li i{font-size: .14rem;}
+header nav .nav li a{color: white;font-size: .14rem;}
+header nav .nav li:hover{background-color: rgba(0,0,0,.15);}
+header nav .nav li:nth-of-type(4):hover .ly,header nav .nav li:nth-of-type(7):hover .yd{display: block;}
+header nav .nav .ly,header nav .nav .yd{width:15.5%;background-color: rgba(0,0,0,.15);height: auto;position: absolute;top: .7rem;display: none;}
+header nav .nav .ly li,header nav .nav .yd li{width: 100%;height: 28px;border-top: 1px solid rgba(0,0,0,.2);text-align: center;line-height: 28px;}
+header nav .nav .ly li a,header nav .nav .yd li a{font-size: .12rem}
+header nav .nav .ly li:hover,header nav .nav .yd li:hover{background: #ff860d;}
+header nav .rheader{float: right;margin-right: 5px;width: 205px;}
+header nav .rheader li{float: left;width: 16%;height: .7rem;padding-top: 25px;box-sizing: border-box;}
+header nav .rheader li a{display: block;width: 24px;height: 24px;margin: 0 auto;opacity: .4;}
+header nav .rheader li a:hover{opacity: .8;cursor: pointer;}
+header nav .rheader li:nth-of-type(1) a{height: 31px;width: 29px;margin-top:-5px;background: url(http://img1.lotour.com/2016/index/icoplus.png) no-repeat -122px 0px;}
+header nav .rheader li:nth-of-type(2) a{background: url(http://img1.lotour.com/2016/index/hdico.png) no-repeat 0px 0px;}
+header nav .rheader li:nth-of-type(3) a{background: url(http://img1.lotour.com/2016/index/hdico.png) no-repeat -28px 0px}
+header nav .rheader li:nth-of-type(4) a{background: url(http://img1.lotour.com/2016/index/hdico.png) no-repeat -57px 0px;}
+header nav .rheader .login{margin-top: .29rem;color: #ffffff;}
+header nav .rheader .login a{color: #fff;font-size: .14rem;}
+header nav .rheader .login a:hover{color: #ff860d;}
+/*轮播图*/
+header .banner{width: 100%;height: 520px;position: relative;}
+header .banner .banner_ul li{width: 100%;overflow: hidden;height: 480px;cursor: pointer;}
+header .banner .banner_ul li h5{color: white;position: absolute;bottom: 50px;
+    font-size: 24px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    width: 100%;
+    text-align: center;
+}
+header .banner .banner_ul .banner_left,header .banner .banner_ul .banner_right{
+    width:40px;height: 60px;background: rgba(0,0,0,.5);position: absolute;
+    top:240px;margin-top: -20px;border-radius: 5px;display: none;
+}
+header .banner .banner_ul .banner_right{right: 0;}
+.left-arrow,.right-arrow{
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-bottom: 1px solid white;
+    float: left;
+    margin-top: 22px;
+
+}
+.left-arrow{
+    margin-left: 15px;
+    border-left: 1px solid white;
+    transform:rotate(45deg);/*正角度是顺时针负角度是逆时针*/
+    -ms-transform:rotate(45deg); 	/* IE 9 */
+    -moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg);
+}
+.right-arrow{
+    margin-left: 10px;
+    border-right: 1px solid white;
+    transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg); 	/* IE 9 */
+    -moz-transform:rotate(-45deg); 	/* Firefox */
+    -webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-45deg);
+}
+header .banner .banner_ul:hover .arrow-on{display: block;}
+header .banner .schedule{
+    width: 100%;height: 2px;background: rgba(0,0,0,.6);
+}
+header .banner .schedule .on{width: 20%;height: 2px;float: left;background: #97dddb;}
+header .banner .schedule li em{height: 2px;width: 40%;background: #ec6909;display: block;}
+header .banner .index-tips{width: 100%;height: 40px;background: #303030;text-align: center;line-height: 40px;}
+header .banner .index-tips p{color: #717171;font-style: normal;font-size: 12px;}
+header .banner .index-tips p span{color: #c5c478;  font-size: 16px;  padding: 0 3px;}
+/*搜索部分*/
+.search{height: 202px;background: red;padding-top: 40px;box-sizing: border-box;}
+.search .tt { font: 16px/20px '微软雅黑';  color: #676b6e;  text-align: center;}
+.search .search_zonghe{height: 62px;margin-top: 10px;}
+.search .search_zonghe form {display: block;width: 300px;height:32px;border: none;margin: 0 auto;line-height: 32px;
+border-radius: 5px;background: #c7c7c9;padding-left: 5px;box-sizing: border-box;
+}
+.search .search_zonghe form i{color: white;cursor: pointer}
+.search .search_zonghe form input{outline: none;font-size: 12px;background: none;list-style: none;border: none;width: 200px;
+color: rgb(110,110,110);vertical-align:middle;
+}
+.search .search_zonghe form input::-webkit-input-placeholder { /* WebKit browsers */
+    color: #fff;
+}
+.search .search_zonghe form input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+}
+.search .search_zonghe form input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #fff;
+}
+.search .search_zonghe form input::-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #fff;
+}
+
+
