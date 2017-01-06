@@ -5,7 +5,7 @@
  * Time: 上午9:12
  */
 /*顶部部分*/
-header,.search{width: 10.3rem;padding:0;position: relative;margin: 0 auto;}
+header,.search,section{width: 10.3rem;padding:0;position: relative;margin: 0 auto;}
 header nav{height: .7rem;margin: 0 auto;}
 header nav{width: 99%;background: url(http://img1.lotour.com/2016/index/navbdbg.png) repeat-x 0 bottom;
 box-sizing: border-box;position: absolute;z-index: 99;
@@ -38,15 +38,8 @@ header nav .rheader .login a:hover{color: #ff860d;}
 /*轮播图*/
 header .banner{width: 100%;height: 520px;position: relative;}
 header .banner .banner_ul li{width: 100%;overflow: hidden;height: 480px;cursor: pointer;}
-header .banner .banner_ul li h5{color: white;position: absolute;bottom: 50px;
-    font-size: 24px;
-    font-stretch: normal;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    width: 100%;
-    text-align: center;
-}
+header .banner .banner_ul li h5{color: white;position: absolute;bottom: 50px;  font-size: 24px;  font-stretch: normal;  font-style: normal;
+    font-variant: normal;  font-weight: normal;  width: 100%;  text-align: center;  }
 header .banner .banner_ul .banner_left,header .banner .banner_ul .banner_right{
     width:40px;height: 60px;background: rgba(0,0,0,.5);position: absolute;
     top:240px;margin-top: -20px;border-radius: 5px;display: none;
@@ -89,13 +82,13 @@ header .banner .index-tips{width: 100%;height: 40px;background: #303030;text-ali
 header .banner .index-tips p{color: #717171;font-style: normal;font-size: 12px;}
 header .banner .index-tips p span{color: #c5c478;  font-size: 16px;  padding: 0 3px;}
 /*搜索部分*/
-.search{height: 202px;background: red;padding-top: 40px;box-sizing: border-box;}
+.search{height: 202px;padding-top: 40px;box-sizing: border-box;}
 .search .tt { font: 16px/20px '微软雅黑';  color: #676b6e;  text-align: center;}
 .search .search_zonghe{height: 62px;margin-top: 10px;}
 .search .search_zonghe form {display: block;width: 300px;height:32px;border: none;margin: 0 auto;line-height: 32px;
 border-radius: 5px;background: #c7c7c9;padding-left: 5px;box-sizing: border-box;
 }
-.search .search_zonghe form i{color: white;cursor: pointer}
+.search .search_zonghe form i{color: white;cursor: pointer;font-size:16px }
 .search .search_zonghe form input{outline: none;font-size: 12px;background: none;list-style: none;border: none;width: 200px;
 color: rgb(110,110,110);vertical-align:middle;
 }
@@ -111,5 +104,48 @@ color: rgb(110,110,110);vertical-align:middle;
 .search .search_zonghe form input::-ms-input-placeholder { /* Internet Explorer 10+ */
     color: #fff;
 }
+.search .search_zonghe p{color: #bdbdbd;text-align: center;font-size: 12px;margin-top: 10px;}
+.search .search_zonghe p a{color: #bdbdbd;}
+.search .search_zonghe p a:hover{color:rgb(236, 105, 9);}
+/*主体内容*/
+section .index-s-item,section .index-b-item,section .index-ad-item{position: relative}
+section .index-s-item{height: 730px;background: mediumvioletred}
+section .index-s-item .index-h5{text-align: center;  font: 24px/30px 微软雅黑;  color: #676b6e;}
+section .index-s-item .index-p{text-align: center;  font: 14px/30px arial;  color: #b9b9b9;}
+section .index-s-item .index-list{width: 1000px;height: 285px;overflow: hidden;background: blue;margin: 0 auto;position: relative;margin-top: 20px;margin-bottom: 70px;}
+section .index-s-item .index-list ul{width:auto; position: absolute;left: -50px;}
+section .index-s-item .index-list ul li{width: 195px;height: 285px;border-radius: 5px;margin-right: 5px;float: left}
+section .index-s-item .index-list ul li .img{display: block;width: 195px;height: 195px;overflow: hidden;border-radius: 5px;position: relative}
+section .index-s-item .index-list ul li .txt{font: 12px/20px 微软雅黑;  color: #b7b7b7;  padding: 10px 0;  margin: 0 8px;text-align: center}
+section .index-s-item .index-list ul li .arcer{padding: 0 15px;}
+section .index-s-item .index-list ul li .arcer a img{border-radius: 100%; margin-right:8px;width: 30px;  height: 30px;}
+section .index-s-item .index-list ul li .arcer a:nth-of-type(4) img{margin: 0;border-radius: 0;}
+section .index-s-item .index-list ul li .img .i1,section .index-s-item .index-list ul li .img .i2
+{
+    width: 195px;
+    height: 195px;
+    display: block;
+    background: url(http://img1.lotour.com/2016/index/ibg.png) repeat center center;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+    background-size: contain;
+}
+section .index-s-item .index-list ul li .img .i1{top:0; }
+section .index-s-item .index-list ul li .img .i2{  bottom: 0px;  }
+section .index-s-item .index-list ul li .img:hover .i1{top: 195px;}
+section .index-s-item .index-list ul li .img:hover .i2{bottom: 195px;}
+section .index-s-item .index-list ul li .img em{display: block;position: absolute;top: 98px;left: 97.5px;margin-left: -47px;}
+section .index-s-item .index-list ul li .img em span{    font: 20px/30px 微软雅黑;  text-align: center;  color: #FFF;}
+section .index-s-item .index-list .in_left,section .index-s-item .index-list .in_right{
+    width:40px;height: 60px;background: rgba(0,0,0,.5);position: absolute;
+    top:142.5px;margin-top: -71.25px;border-radius: 5px;display: block;
+    cursor: pointer;
+}
+section .index-s-item .index-list .in_right{right: 0;}
+
+
+
 
 
