@@ -16,7 +16,7 @@ address, cite, dfn, em, var { font-style:normal; }
 code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
 small{ font-size:12px; } 
 dl,ul,ol,menu,li {list-style:none} 
-a { text-decoration:none; } 
+a { text-decoration:none; font-family: 微软雅黑, 'Microsoft YaHei';font-weight: normal}
 sup { vertical-align:text-top; } 
 sub{ vertical-align:text-bottom; } 
 legend { color:#000; } 
