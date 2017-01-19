@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    b();
+    function b() {
+        if(a){a();}
+        else {
+            alert("b");
+            function a() {
+                alert("a");
+            }
+        }
+    }
+</script>
+</body>
+</html>

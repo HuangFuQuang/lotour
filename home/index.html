@@ -9,8 +9,10 @@
 	<link rel="stylesheet" type="text/css" href="css/home_mousewheel.css">
 	<link rel="stylesheet" type="text/css" href="css/home_charts.css">
 	<link rel="stylesheet" href="//at.alicdn.com/t/font_qg3rh90bcgl23xr.css">
-	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="js/jQuery%20Mousewheel%203.1.13.js"></script>
+	<script type="text/javascript" src="../common_js/jquery-3.1.0.js"></script>
+	<script src="../common_js/artTemplate.js"></script>
+	<script src="../common_js/jQuery Mousewheel 3.1.13.js"></script>
+	<script src="../common_js/mousewheel.js"></script>
 </head>
 <body>
     <!--头部-->
@@ -52,19 +54,16 @@
 		<!-- 轮播图区 -->
 		<div class="banner">
 			<ul class="banner_ul">
-				<li style="background: url('http://img3.lotour.net/bcef/2016/11/2016112811561677396016.jpg')">
-					<a href=""></a>
-					<h5>中国保存最好的第一崖墓，揭开两千年不盗之谜？</h5>
-				</li>
-				<div class="banner_left arrow-on"><div class="left-arrow "></div></div>
-				<div class="banner_right arrow-on"><div class="right-arrow "></div></div>
+				<!--li填充区-->
 			</ul>
+			<div class="banner_left arrow-on"><div class="left-arrow "></div></div>
+			<div class="banner_right arrow-on"><div class="right-arrow "></div></div>
 			<ul class="schedule">
 				<li class="on"><em></em></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li><em></em></li>
+				<li><em></em></li>
+				<li><em></em></li>
+				<li><em></em></li>
 			</ul>
 			<div class="index-tips">
 				<p>
@@ -98,274 +97,70 @@
 	   <article class="index-s-item">
 		   <h5 class="index-h5">不要眨眼，还有N种好玩的兴趣主题，等你来探索</h5>
 		   <p class="index-p">Recommended many kinds of tourism interests, just for you.</p>
-		   <div class="index-list">
-			   <ul>
-				   <li>
-					   <a href="" class="img">
-						   <img src="http://img4.lotour.net/bcef/theme//2016/1026/2016102611150199652995.jpg" alt="黑米粒">
-						   <em><span>冰雪奇缘</span></em>
-						   <i class="i1"></i>
-						   <i class="i2"></i>
-					   </a>
-					   <p class="txt">
-						   有384种冰雪灵感等你探索<br>
-						   它们由227位旅行家亲历整理
-					   </p>
-					   <div class="arcer">
-						   <a href="http://zhuanlan.lotour.com/2493" target="_blank" title="白玛南疆">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1219/20161219111854652350340_86.jpg  ">
+		   <div class="index-list" >
+			   <ul id="index-ul1">
+				   <script id="index-li1" type="text/html">
+					   <li>
+						   <a href="{{Url}}" class="img">
+							   <img src="{{MobileLogo}}" alt="{{HomeName}}">
+							   <em><span>{{HomeName}}</span></em>
+							   <i class="i1"></i>
+							   <i class="i2"></i>
 						   </a>
-						   <a href="http://zhuanlan.lotour.com/922" target="_blank" title="尔冬">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1203/20161203143014837564977_86.jpg">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/109" target="_blank" title="紫荆__">
-							   <img src="http://img1.lotour.net/Inspiration/2015/0924/2015092417343072564574_86.jpg ">
-						   </a>
-						   <a href="http://www.lotour.com/zhengwen/x3736" target="_black" title="更多">
-							   <img src="http://img1.lotour.com/2016/index/arcmore.png">
-						   </a>
-					   </div>
-				   </li>
-				   <li>
-					   <a href="" class="img">
-						   <img src="http://img4.lotour.net/bcef/theme//2016/1026/2016102611150199652995.jpg" alt="黑米粒">
-						   <em><span>冰雪奇缘</span></em>
-						   <i class="i1"></i>
-						   <i class="i2"></i>
-					   </a>
-					   <p class="txt">
-						   有384种冰雪灵感等你探索<br>
-						   它们由227位旅行家亲历整理
-					   </p>
-					   <div class="arcer">
-						   <a href="http://zhuanlan.lotour.com/2493" target="_blank" title="白玛南疆">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1219/20161219111854652350340_86.jpg  ">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/922" target="_blank" title="尔冬">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1203/20161203143014837564977_86.jpg">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/109" target="_blank" title="紫荆__">
-							   <img src="http://img1.lotour.net/Inspiration/2015/0924/2015092417343072564574_86.jpg ">
-						   </a>
-						   <a href="http://www.lotour.com/zhengwen/x3736" target="_black" title="更多">
-							   <img src="http://img1.lotour.com/2016/index/arcmore.png">
-						   </a>
-					   </div>
-				   </li>
-				   <li>
-					   <a href="" class="img">
-						   <img src="http://img4.lotour.net/bcef/theme//2016/1026/2016102611150199652995.jpg" alt="黑米粒">
-						   <em><span>冰雪奇缘</span></em>
-						   <i class="i1"></i>
-						   <i class="i2"></i>
-					   </a>
-					   <p class="txt">
-						   有384种冰雪灵感等你探索<br>
-						   它们由227位旅行家亲历整理
-					   </p>
-					   <div class="arcer">
-						   <a href="http://zhuanlan.lotour.com/2493" target="_blank" title="白玛南疆">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1219/20161219111854652350340_86.jpg  ">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/922" target="_blank" title="尔冬">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1203/20161203143014837564977_86.jpg">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/109" target="_blank" title="紫荆__">
-							   <img src="http://img1.lotour.net/Inspiration/2015/0924/2015092417343072564574_86.jpg ">
-						   </a>
-						   <a href="http://www.lotour.com/zhengwen/x3736" target="_black" title="更多">
-							   <img src="http://img1.lotour.com/2016/index/arcmore.png">
-						   </a>
-					   </div>
-				   </li>
-				   <li>
-					   <a href="" class="img">
-						   <img src="http://img4.lotour.net/bcef/theme//2016/1026/2016102611150199652995.jpg" alt="黑米粒">
-						   <em><span>冰雪奇缘</span></em>
-						   <i class="i1"></i>
-						   <i class="i2"></i>
-					   </a>
-					   <p class="txt">
-						   有384种冰雪灵感等你探索<br>
-						   它们由227位旅行家亲历整理
-					   </p>
-					   <div class="arcer">
-						   <a href="http://zhuanlan.lotour.com/2493" target="_blank" title="白玛南疆">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1219/20161219111854652350340_86.jpg  ">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/922" target="_blank" title="尔冬">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1203/20161203143014837564977_86.jpg">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/109" target="_blank" title="紫荆__">
-							   <img src="http://img1.lotour.net/Inspiration/2015/0924/2015092417343072564574_86.jpg ">
-						   </a>
-						   <a href="http://www.lotour.com/zhengwen/x3736" target="_black" title="更多">
-							   <img src="http://img1.lotour.com/2016/index/arcmore.png">
-						   </a>
-					   </div>
-				   </li>
-				   <li>
-					   <a href="" class="img">
-						   <img src="http://img4.lotour.net/bcef/theme//2016/1026/2016102611150199652995.jpg" alt="黑米粒">
-						   <em><span>冰雪奇缘</span></em>
-						   <i class="i1"></i>
-						   <i class="i2"></i>
-					   </a>
-					   <p class="txt">
-						   有384种冰雪灵感等你探索<br>
-						   它们由227位旅行家亲历整理
-					   </p>
-					   <div class="arcer">
-						   <a href="http://zhuanlan.lotour.com/2493" target="_blank" title="白玛南疆">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1219/20161219111854652350340_86.jpg  ">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/922" target="_blank" title="尔冬">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1203/20161203143014837564977_86.jpg">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/109" target="_blank" title="紫荆__">
-							   <img src="http://img1.lotour.net/Inspiration/2015/0924/2015092417343072564574_86.jpg ">
-						   </a>
-						   <a href="http://www.lotour.com/zhengwen/x3736" target="_black" title="更多">
-							   <img src="http://img1.lotour.com/2016/index/arcmore.png">
-						   </a>
-					   </div>
-				   </li>
+						   <p class="txt">
+							   有384种冰雪灵感等你探索<br>
+							   它们由227位旅行家亲历整理
+						   </p>
+						   <div class="arcer">
+							   <a href="{{photo[0].Author}}" target="_blank" title="{{photo[0].NickName}}">
+								   <img src="{{photo[0].HeadSculpture}}">
+							   </a>
+							   <a href="{{photo[1].Author}}" target="_blank" title="{{photo[1].NickName}}">
+								   <img src="{{photo[1].HeadSculpture}}">
+							   </a>
+							   <a href="{{photo[2].Author}}" target="_blank" title="{{photo[2].NickName}}">
+								   <img src="{{photo[2].HeadSculpture}}">
+							   </a>
+							   <a href="{{Url}}" target="_black" title="更多">
+								   <img src="http://img1.lotour.com/2016/index/arcmore.png">
+							   </a>
+						   </div>
+					   </li>
+                   </script>
 			   </ul>
 			   <div class="in_left in-on"><div class="left-arrow "></div></div>
 			   <div class="in_right in-on"><div class="right-arrow "></div></div>
 		   </div>
-		   <div class="index-list">
-			   <ul>
-				   <li>
-					   <a href="" class="img">
-						   <img src="http://img4.lotour.net/bcef/theme//2016/1026/2016102611150199652995.jpg" alt="黑米粒">
-						   <em><span>冰雪奇缘</span></em>
-						   <i class="i1"></i>
-						   <i class="i2"></i>
-					   </a>
-					   <p class="txt">
-						   有384种冰雪灵感等你探索<br>
-						   它们由227位旅行家亲历整理
-					   </p>
-					   <div class="arcer">
-						   <a href="http://zhuanlan.lotour.com/2493" target="_blank" title="白玛南疆">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1219/20161219111854652350340_86.jpg  ">
+		   <div class="index-list" >
+			   <ul id="index-ul2">
+				   <script id="index-li2" type="text/html">
+					   <li>
+						   <a href="{{Url}}" class="img">
+							   <img src="{{MobileLogo}}" alt="{{HomeName}}">
+							   <em><span>{{HomeName}}</span></em>
+							   <i class="i1"></i>
+							   <i class="i2"></i>
 						   </a>
-						   <a href="http://zhuanlan.lotour.com/922" target="_blank" title="尔冬">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1203/20161203143014837564977_86.jpg">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/109" target="_blank" title="紫荆__">
-							   <img src="http://img1.lotour.net/Inspiration/2015/0924/2015092417343072564574_86.jpg ">
-						   </a>
-						   <a href="http://www.lotour.com/zhengwen/x3736" target="_black" title="更多">
-							   <img src="http://img1.lotour.com/2016/index/arcmore.png">
-						   </a>
-					   </div>
-				   </li>
-				   <li>
-					   <a href="" class="img">
-						   <img src="http://img4.lotour.net/bcef/theme//2016/1026/2016102611150199652995.jpg" alt="黑米粒">
-						   <em><span>冰雪奇缘</span></em>
-						   <i class="i1"></i>
-						   <i class="i2"></i>
-					   </a>
-					   <p class="txt">
-						   有384种冰雪灵感等你探索<br>
-						   它们由227位旅行家亲历整理
-					   </p>
-					   <div class="arcer">
-						   <a href="http://zhuanlan.lotour.com/2493" target="_blank" title="白玛南疆">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1219/20161219111854652350340_86.jpg  ">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/922" target="_blank" title="尔冬">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1203/20161203143014837564977_86.jpg">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/109" target="_blank" title="紫荆__">
-							   <img src="http://img1.lotour.net/Inspiration/2015/0924/2015092417343072564574_86.jpg ">
-						   </a>
-						   <a href="http://www.lotour.com/zhengwen/x3736" target="_black" title="更多">
-							   <img src="http://img1.lotour.com/2016/index/arcmore.png">
-						   </a>
-					   </div>
-				   </li>
-				   <li>
-					   <a href="" class="img">
-						   <img src="http://img4.lotour.net/bcef/theme//2016/1026/2016102611150199652995.jpg" alt="黑米粒">
-						   <em><span>冰雪奇缘</span></em>
-						   <i class="i1"></i>
-						   <i class="i2"></i>
-					   </a>
-					   <p class="txt">
-						   有384种冰雪灵感等你探索<br>
-						   它们由227位旅行家亲历整理
-					   </p>
-					   <div class="arcer">
-						   <a href="http://zhuanlan.lotour.com/2493" target="_blank" title="白玛南疆">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1219/20161219111854652350340_86.jpg  ">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/922" target="_blank" title="尔冬">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1203/20161203143014837564977_86.jpg">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/109" target="_blank" title="紫荆__">
-							   <img src="http://img1.lotour.net/Inspiration/2015/0924/2015092417343072564574_86.jpg ">
-						   </a>
-						   <a href="http://www.lotour.com/zhengwen/x3736" target="_black" title="更多">
-							   <img src="http://img1.lotour.com/2016/index/arcmore.png">
-						   </a>
-					   </div>
-				   </li>
-				   <li>
-					   <a href="" class="img">
-						   <img src="http://img4.lotour.net/bcef/theme//2016/1026/2016102611150199652995.jpg" alt="黑米粒">
-						   <em><span>冰雪奇缘</span></em>
-						   <i class="i1"></i>
-						   <i class="i2"></i>
-					   </a>
-					   <p class="txt">
-						   有384种冰雪灵感等你探索<br>
-						   它们由227位旅行家亲历整理
-					   </p>
-					   <div class="arcer">
-						   <a href="http://zhuanlan.lotour.com/2493" target="_blank" title="白玛南疆">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1219/20161219111854652350340_86.jpg  ">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/922" target="_blank" title="尔冬">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1203/20161203143014837564977_86.jpg">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/109" target="_blank" title="紫荆__">
-							   <img src="http://img1.lotour.net/Inspiration/2015/0924/2015092417343072564574_86.jpg ">
-						   </a>
-						   <a href="http://www.lotour.com/zhengwen/x3736" target="_black" title="更多">
-							   <img src="http://img1.lotour.com/2016/index/arcmore.png">
-						   </a>
-					   </div>
-				   </li>
-				   <li>
-					   <a href="" class="img">
-						   <img src="http://img4.lotour.net/bcef/theme//2016/1026/2016102611150199652995.jpg" alt="黑米粒">
-						   <em><span>冰雪奇缘</span></em>
-						   <i class="i1"></i>
-						   <i class="i2"></i>
-					   </a>
-					   <p class="txt">
-						   有384种冰雪灵感等你探索<br>
-						   它们由227位旅行家亲历整理
-					   </p>
-					   <div class="arcer">
-						   <a href="http://zhuanlan.lotour.com/2493" target="_blank" title="白玛南疆">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1219/20161219111854652350340_86.jpg  ">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/922" target="_blank" title="尔冬">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1203/20161203143014837564977_86.jpg">
-						   </a>
-						   <a href="http://zhuanlan.lotour.com/109" target="_blank" title="紫荆__">
-							   <img src="http://img1.lotour.net/Inspiration/2015/0924/2015092417343072564574_86.jpg ">
-						   </a>
-						   <a href="http://www.lotour.com/zhengwen/x3736" target="_black" title="更多">
-							   <img src="http://img1.lotour.com/2016/index/arcmore.png">
-						   </a>
-					   </div>
-				   </li>
+						   <p class="txt">
+							   有384种冰雪灵感等你探索<br>
+							   它们由227位旅行家亲历整理
+						   </p>
+						   <div class="arcer">
+							   <a href="{{photo[0].Author}}" target="_blank" title="{{photo[0].NickName}}">
+								   <img src="{{photo[0].HeadSculpture}}">
+							   </a>
+							   <a href="{{photo[1].Author}}" target="_blank" title="{{photo[1].NickName}}">
+								   <img src="{{photo[1].HeadSculpture}}">
+							   </a>
+							   <a href="{{photo[2].Author}}" target="_blank" title="{{photo[2].NickName}}">
+								   <img src="{{photo[2].HeadSculpture}}">
+							   </a>
+							   <a href="{{Url}}" target="_black" title="更多">
+								   <img src="http://img1.lotour.com/2016/index/arcmore.png">
+							   </a>
+						   </div>
+					   </li>
+				   </script>
 			   </ul>
 			   <div class="in_left in-on"><div class="left-arrow "></div></div>
 			   <div class="in_right in-on"><div class="right-arrow "></div></div>
@@ -383,7 +178,67 @@
 			   <ul>
 				   <li>
 					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" class="img">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1229/20161229230402641983907_295.jpg">
+						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104203725016694984_295.jpg">
+						   <em><span class="t2">这里竟有瘟疫<br>受害者尸骨</span></em>
+						   <i class="i1"></i>
+						   <i class="i2"></i>
+					   </a>
+					   <p class="rk clearfix">
+						   <a target="_blank" href="">地标建筑</a>
+					   </p>
+					   <h5>
+						   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" >“维也纳的心脏”长这样！</a>
+					   </h5>
+					   <p class="tool">
+						   <i class="icon iconfont icon-dingwei"></i>
+						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="北极村" >斯蒂芬大教堂</a>
+						   <i class="icon iconfont icon-yanjing">5903</i>
+					   </p>
+					   <hr height="1px" width="70%" style="color: #555;margin-top: 20px;margin-bottom: 20px;">
+					   <div class="rter">
+						   <a target="_blank" href="http://zhuanlan.lotour.com/2483">
+							   <img src="http://img1.lotour.net/Inspiration/2016/0322/20160322194301522277326_86.JPG">
+						   </a>
+						   <div class="p">
+							   <a target="_blank" href="http://zhuanlan.lotour.com/2483"">Karen</a>
+							   <p>去哪儿聪明旅行家，旅游攻略达人，摄影</p>
+						   </div>
+					   </div>
+				   </li>
+				   <li>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" class="img">
+						   <img src="http://img1.lotour.net/Inspiration/2017/0103/20170103231042609484277_295.jpg">
+						   <em><span class="t2">冬季亲子<br>游三亚</span></em>
+						   <i class="i1"></i>
+						   <i class="i2"></i>
+					   </a>
+					   <p class="rk clearfix">
+						   <a target="_blank" href="">主题公园</a>
+						   <a target="_blank" href="" >逃离冬天</a>
+						   <a target="_blank" href="" >动物园</a>
+					   </p>
+					   <h5>
+						   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" >冬日来三亚 和孩子一起在千古</a>
+					   </h5>
+					   <p class="tool">
+						   <i class="icon iconfont icon-dingwei"></i>
+						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="北极村" >宋城千古情</a>
+						   <i class="icon iconfont icon-yanjing">1.2万</i>
+					   </p>
+					   <hr height="1px" width="70%" style="color: #555;margin-top: 20px;margin-bottom: 20px;">
+					   <div class="rter">
+						   <a target="_blank" href="http://zhuanlan.lotour.com/2483">
+							   <img src="http://img1.lotour.net/mudidiplay/2016/0503/20160503184947760ba_86.jpg">
+						   </a>
+						   <div class="p">
+							   <a target="_blank" href="http://zhuanlan.lotour.com/2483"">星云视界</a>
+							   <p>中国摄影家协会会员，旅游摄影自媒体..</p>
+						   </div>
+					   </div>
+				   </li>
+				   <li>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" class="img">
+						   <img src="http://img1.lotour.net/mudidiplay/2016/0824/2016082418295091e8f.jpg">
 						   <em><span class="t2">绿皮火车<br>带你北上看雪</span></em>
 						   <i class="i1"></i>
 						   <i class="i2"></i>
@@ -413,7 +268,7 @@
 				   </li>
 				   <li>
 					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" class="img">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1229/20161229230402641983907_295.jpg">
+						   <img src="http://img1.lotour.net/Inspiration/2017/0105/20170105010104516952798_295.jpg">
 						   <em><span class="t2">绿皮火车<br>带你北上看雪</span></em>
 						   <i class="i1"></i>
 						   <i class="i2"></i>
@@ -443,7 +298,7 @@
 				   </li>
 				   <li>
 					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" class="img">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1229/20161229230402641983907_295.jpg">
+						   <img src="http://img1.lotour.net/Inspiration/2016/1227/20161227171554297952880_295.jpg">
 						   <em><span class="t2">绿皮火车<br>带你北上看雪</span></em>
 						   <i class="i1"></i>
 						   <i class="i2"></i>
@@ -473,7 +328,7 @@
 				   </li>
 				   <li>
 					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" class="img">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1229/20161229230402641983907_295.jpg">
+						   <img src="http://img1.lotour.net/Inspiration/2017/0108/20170108230707302963392_295.jpg">
 						   <em><span class="t2">绿皮火车<br>带你北上看雪</span></em>
 						   <i class="i1"></i>
 						   <i class="i2"></i>
@@ -503,7 +358,7 @@
 				   </li>
 				   <li>
 					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" class="img">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1229/20161229230402641983907_295.jpg">
+						   <img src="http://img1.lotour.net/Inspiration/2017/0105/20170105134521313533231_295.jpg">
 						   <em><span class="t2">绿皮火车<br>带你北上看雪</span></em>
 						   <i class="i1"></i>
 						   <i class="i2"></i>
@@ -533,67 +388,7 @@
 				   </li>
 				   <li>
 					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" class="img">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1229/20161229230402641983907_295.jpg">
-						   <em><span class="t2">绿皮火车<br>带你北上看雪</span></em>
-						   <i class="i1"></i>
-						   <i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a target="_blank" href="">冰雪</a>
-						   <a target="_blank" href="" >童话世界</a>
-					   </p>
-					   <h5>
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" >看雪季，这里的雪景更有看头些</a>
-					   </h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="北极村" >北极村</a>
-						   <i class="icon iconfont icon-yanjing">2011</i>
-					   </p>
-					   <hr height="1px" width="70%" style="color: #555;margin-top: 20px;margin-bottom: 20px;">
-					   <div class="rter">
-						   <a target="_blank" href="http://zhuanlan.lotour.com/2483">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1215/2016121520525977739199_86.jpg">
-						   </a>
-						   <div class="p">
-							   <a target="_blank" href="http://zhuanlan.lotour.com/2483"">Coco君</a>
-							   <p>旅游达人 聪明旅行家 试睡员 微博旅</p>
-						   </div>
-					   </div>
-				   </li>
-				   <li>
-					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" class="img">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1229/20161229230402641983907_295.jpg">
-						   <em><span class="t2">绿皮火车<br>带你北上看雪</span></em>
-						   <i class="i1"></i>
-						   <i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a target="_blank" href="">冰雪</a>
-						   <a target="_blank" href="" >童话世界</a>
-					   </p>
-					   <h5>
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" >看雪季，这里的雪景更有看头些</a>
-					   </h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="北极村" >北极村</a>
-						   <i class="icon iconfont icon-yanjing">2011</i>
-					   </p>
-					   <hr height="1px" width="70%" style="color: #555;margin-top: 20px;margin-bottom: 20px;">
-					   <div class="rter">
-						   <a target="_blank" href="http://zhuanlan.lotour.com/2483">
-							   <img src="http://img1.lotour.net/Inspiration/2016/1215/2016121520525977739199_86.jpg">
-						   </a>
-						   <div class="p">
-							   <a target="_blank" href="http://zhuanlan.lotour.com/2483"">Coco君</a>
-							   <p>旅游达人 聪明旅行家 试睡员 微博旅</p>
-						   </div>
-					   </div>
-				   </li>
-				   <li>
-					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-28604.shtml" class="img">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1229/20161229230402641983907_295.jpg">
+						   <img src="http://img1.lotour.net/Inspiration/2017/0108/20170108203047130659144_295.jpg">
 						   <em><span class="t2">绿皮火车<br>带你北上看雪</span></em>
 						   <i class="i1"></i>
 						   <i class="i2"></i>
@@ -632,46 +427,46 @@
 		   <ul>
 			   <li>
 				   <a target="_blank" href="http://adclient.lotour.com/Forms/comment/adurl.aspx?id=6875" class="img">
-					   <img src="http://img3.lotour.net/bcef/2017/01/2017010316121156856732.jpg">
+					   <img src="http://img3.lotour.net/bcef/2016/12/2016122211190301682705.jpg">
 					   <div class="adv"><p>&nbsp;<span>推广</span>&nbsp;</p></div>
-					   <em><span>圣洁拉萨健康之旅</span></em>
+					   <em><span>青山碧水休闲六安</span></em>
 					   <i class="i1"></i><i class="i2"></i>
 				   </a>
-				   <p class="adv-p">冬游拉萨 畅享暖阳<br>
-					   拉萨市旅游局
+				   <p class="adv-p">十二星座旅游达人 发现六安之美<br>
+					   六安市旅游发展委员会
 				   </p>
 			   </li>
 			   <li>
 				   <a target="_blank" href="http://adclient.lotour.com/Forms/comment/adurl.aspx?id=6875" class="img">
-					   <img src="http://img3.lotour.net/bcef/2017/01/2017010316121156856732.jpg">
-					   <div class="adv"><p>&nbsp;<span>推广</span>&nbsp;</p></div>
-					   <em><span>圣洁拉萨健康之旅</span></em>
+					   <img src="http://img3.lotour.net/bcef/2016/11/2016110710145410640989.jpg">
+					   <div class="adv" style="display: none"><p>&nbsp;<span>推广</span>&nbsp;</p></div>
+					   <em><span>国家农业的别样美</span></em>
 					   <i class="i1"></i><i class="i2"></i>
 				   </a>
-				   <p class="adv-p">冬游拉萨 畅享暖阳<br>
-					   拉萨市旅游局
+				   <p class="adv-p">十二星座达人 发现中国农垦之美<br>
+					   中国农垦·广垦集团
 				   </p>
 			   </li>
 			   <li>
 				   <a target="_blank" href="http://adclient.lotour.com/Forms/comment/adurl.aspx?id=6875" class="img">
-					   <img src="http://img3.lotour.net/bcef/2017/01/2017010316121156856732.jpg">
-					   <div class="adv"><p>&nbsp;<span>推广</span>&nbsp;</p></div>
-					   <em><span>圣洁拉萨健康之旅</span></em>
+					   <img src="http://img3.lotour.net/bcef/2017/01/2017010909264696578702.jpg">
+					   <div class="adv" style="display: none"><p>&nbsp;<span>推广</span>&nbsp;</p></div>
+					   <em><span>浪漫出行处女星号</span></em>
 					   <i class="i1"></i><i class="i2"></i>
 				   </a>
-				   <p class="adv-p">冬游拉萨 畅享暖阳<br>
-					   拉萨市旅游局
+				   <p class="adv-p">十二星座旅游达人 发现丽星邮之美<br>
+					   云顶旅行社（上海）有限公司
 				   </p>
 			   </li>
 			   <li>
 				   <a target="_blank" href="http://adclient.lotour.com/Forms/comment/adurl.aspx?id=6875" class="img">
-					   <img src="http://img3.lotour.net/bcef/2017/01/2017010316121156856732.jpg">
+					   <img src="http://img3.lotour.net/bcef/2016/12/2016121210291057724156.jpg">
 					   <div class="adv"><p>&nbsp;<span>推广</span>&nbsp;</p></div>
-					   <em><span>圣洁拉萨健康之旅</span></em>
+					   <em><span>美丽雷山过苗年</span></em>
 					   <i class="i1"></i><i class="i2"></i>
 				   </a>
-				   <p class="adv-p">冬游拉萨 畅享暖阳<br>
-					   拉萨市旅游局
+				   <p class="adv-p">十二星座旅游达人发现雷山苗年之美<br>
+					   雷山县旅游发展委员会
 				   </p>
 			   </li>
 		   </ul>
@@ -715,6 +510,8 @@
 			   <span></span>
 		   </div>
 	   </article>
+		<!--空div-->
+		<div id="mu"></div>
 	   <!--分享灵感-->
 	   <article class="index-c-item">
 		   <h5 class="index-h5"><a target="_blank" href="http://www.lotour.com/zhengwen/r0">发现国内灵感</a></h5>
@@ -762,237 +559,49 @@
 			   </a>
 		   </p>
 		   <div class="index-c-list">
-			   <ul>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
+			   <ul id="c-listul1">
+				   <script type="text/html" id="chuguo1">
+					   <li>
+						   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
+							   <img src="{{Pic}}">
+							   <em><span class="t2">{{Dot}}</span></em>
+							   <i class="i1"></i><i class="i2"></i>
+						   </a>
+						   <p class="rk clearfix">
+							   <a href="{{TagCollections[0].Url}}" target="_blank">{{TagCollections[0].TagName}}</a>
+						   </p>
+						   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">{{Title}}</a></h5>
+						   <p class="tool">
+							   <i class="icon iconfont icon-dingwei"></i>
+							   <a href="{{RegionUrl}}" target="_blank" title="{{RegionName}}" >{{RegionName}}</a>
+							   <i class="icon iconfont icon-yanjing">{{CountBrowse}}</i>
+						   </p>
+					   </li>
+				   </script>
 			   </ul>
 			   <div class="in_left in-on"><div class="left-arrow "></div></div>
 			   <div class="in_right in-on"><div class="right-arrow "></div></div>
 		   </div>
 		   <div class="index-c-list">
-			   <ul>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
+			   <ul id="c-listul2">
+				   <script type="text/html" id="chuguo2">
+					   <li>
+						   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
+							   <img src="{{Pic}}">
+							   <em><span class="t2">{{Dot}}</span></em>
+							   <i class="i1"></i><i class="i2"></i>
+						   </a>
+						   <p class="rk clearfix">
+							   <a href="{{TagCollections[0].Url}}" target="_blank">{{TagCollections[0].TagName}}</a>
+						   </p>
+						   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">{{Title}}</a></h5>
+						   <p class="tool">
+							   <i class="icon iconfont icon-dingwei"></i>
+							   <a href="{{RegionUrl}}" target="_blank" title="{{RegionName}}" >{{RegionName}}</a>
+							   <i class="icon iconfont icon-yanjing">{{CountBrowse}}</i>
+						   </p>
+					   </li>
+				   </script>
 			   </ul>
 			   <div class="in_left in-on"><div class="left-arrow "></div></div>
 			   <div class="in_right in-on"><div class="right-arrow "></div></div>
@@ -1001,38 +610,38 @@
 			   <ul>
 				   <li>
 					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-28874.shtml" class="img" target="_blank">
-					     <img src="http://img1.lotour.net/Inspiration/2017/0102/20170102182011859293034_600.jpg">
-					     <em><span class="t2">冬天的长白山<br>天池美哭你</span></em>
+					     <img src="http://img1.lotour.net/Inspiration/2016/1218/20161218220025105972048_600.jpg">
+					     <em><span class="t2">神奇的<br>牵手夫妻树</span></em>
 					     <i class="i1"></i><i class="i2"></i>
 					   </a>
 					   <p class="rk clearfix">
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3736" >冰雪</a>
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3742">火山</a>
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/x4288">人少</a>
+						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3736" >湖泊</a>
+						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3742">特色住宿</a>
+						   <a target="_blank" href="http://www.lotour.com/zhengwen/x4288">摄影</a>
 					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28874.shtml" target="_blank">楚楚冻人的长白山天池</a></h5>
+					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28874.shtml" target="_blank">徜徉在苍山下洱海边 静观风花雪月</a></h5>
 					   <p class="tool">
 						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="长白山" >长白山</a>
-						   <i class="icon iconfont icon-yanjing">8092</i>
+						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="长白山" >洱海</a>
+						   <i class="icon iconfont icon-yanjing">2万</i>
 					   </p>
 				   </li>
 				   <li>
 					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-28874.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0102/20170102182011859293034_600.jpg">
-						   <em><span class="t2">冬天的长白山<br>天池美哭你</span></em>
+						   <img src="http://img1.lotour.net/Inspiration/2017/0102/2017010216494235949644_600.jpg">
+						   <em><span class="t2">世界最高<br>观景台</span></em>
 						   <i class="i1"></i><i class="i2"></i>
 					   </a>
 					   <p class="rk clearfix">
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3736" >冰雪</a>
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3742">火山</a>
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/x4288">人少</a>
+						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3736" >雪山冰川</a>
+						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3742">民族村寨</a>
+
 					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28874.shtml" target="_blank">楚楚冻人的长白山天池</a></h5>
+					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28874.shtml" target="_blank">走进远古、探古溯源——达古冰山</a></h5>
 					   <p class="tool">
 						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="长白山" >长白山</a>
-						   <i class="icon iconfont icon-yanjing">8092</i>
+						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="长白山" >黑水</a>
+						   <i class="icon iconfont icon-yanjing">14.1万</i>
 					   </p>
 				   </li>
 			   </ul>
@@ -1084,237 +693,49 @@
 			   </a>
 		   </p>
 		   <div class="index-c-list">
-			   <ul>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
+			   <ul id="c-listul3">
+				   <script type="text/html" id="chujing1">
+					   <li>
+						   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
+							   <img src="{{Pic}}">
+							   <em><span class="t2">{{Dot}}</span></em>
+							   <i class="i1"></i><i class="i2"></i>
+						   </a>
+						   <p class="rk clearfix">
+							   <a href="{{TagCollections[0].Url}}" target="_blank">{{TagCollections[0].TagName}}</a>
+						   </p>
+						   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">{{Title}}</a></h5>
+						   <p class="tool">
+							   <i class="icon iconfont icon-dingwei"></i>
+							   <a href="{{RegionUrl}}" target="_blank" title="{{RegionName}}" >{{RegionName}}</a>
+							   <i class="icon iconfont icon-yanjing">{{CountBrowse}}</i>
+						   </p>
+					   </li>
+				   </script>
 			   </ul>
 			   <div class="in_left in-on"><div class="left-arrow "></div></div>
 			   <div class="in_right in-on"><div class="right-arrow "></div></div>
 		   </div>
 		   <div class="index-c-list">
-			   <ul>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
-				   <li>
-					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0104/20170104180144813208119_295.jpg">
-						   <em><span class="t2">房车自驾<br>和家人游海南</span></em>
-						   <i class="i1"></i><i class="i2"></i>
-					   </a>
-					   <p class="rk clearfix">
-						   <a href="http://www.lotour.com/zhengwen/x4134" target="_blank">城市观光</a>
-					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">兜兜转转离不开的台北</a></h5>
-					   <p class="tool">
-						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="台北" >台北</a>
-						   <i class="icon iconfont icon-yanjing">22336</i>
-					   </p>
-				   </li>
+			   <ul id="c-listul4">
+				   <script type="text/html" id="chujing2">
+					   <li>
+						   <a href="http://www.lotour.com/zhengwen/2/lg-jc-29029.shtml" class="img" target="_blank">
+							   <img src="{{Pic}}">
+							   <em><span class="t2">{{Dot}}</span></em>
+							   <i class="i1"></i><i class="i2"></i>
+						   </a>
+						   <p class="rk clearfix">
+							   <a href="{{TagCollections[0].Url}}" target="_blank">{{TagCollections[0].TagName}}</a>
+						   </p>
+						   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28323.shtml" target="_blank">{{Title}}</a></h5>
+						   <p class="tool">
+							   <i class="icon iconfont icon-dingwei"></i>
+							   <a href="{{RegionUrl}}" target="_blank" title="{{RegionName}}" >{{RegionName}}</a>
+							   <i class="icon iconfont icon-yanjing">{{CountBrowse}}</i>
+						   </p>
+					   </li>
+				   </script>
 			   </ul>
 			   <div class="in_left in-on"><div class="left-arrow "></div></div>
 			   <div class="in_right in-on"><div class="right-arrow "></div></div>
@@ -1323,38 +744,34 @@
 			   <ul>
 				   <li>
 					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-28874.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0102/20170102182011859293034_600.jpg">
-						   <em><span class="t2">冬天的长白山<br>天池美哭你</span></em>
+						   <img src="http://img1.lotour.net/Inspiration/2017/0106/20170106145623828939708_600.jpg">
+						   <em><span class="t2">电影音乐<br>之声拍摄地</span></em>
 						   <i class="i1"></i><i class="i2"></i>
 					   </a>
 					   <p class="rk clearfix">
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3736" >冰雪</a>
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3742">火山</a>
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/x4288">人少</a>
+						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3736" >历史古迹</a>
 					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28874.shtml" target="_blank">楚楚冻人的长白山天池</a></h5>
+					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28874.shtml" target="_blank">游走在《音乐之声》里的农贝格女修道院</a></h5>
 					   <p class="tool">
 						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="长白山" >长白山</a>
-						   <i class="icon iconfont icon-yanjing">8092</i>
+						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="长白山" >农贝格女修道院</a>
+						   <i class="icon iconfont icon-yanjing">1.6万</i>
 					   </p>
 				   </li>
 				   <li>
 					   <a href="http://www.lotour.com/zhengwen/2/lg-jc-28874.shtml" class="img" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2017/0102/20170102182011859293034_600.jpg">
-						   <em><span class="t2">冬天的长白山<br>天池美哭你</span></em>
+						   <img src="http://img1.lotour.net/Inspiration/2016/1223/20161223144512511367087_600.jpg">
+						   <em><span class="t2">圣母玛利亚<br>住过的小屋</span></em>
 						   <i class="i1"></i><i class="i2"></i>
 					   </a>
 					   <p class="rk clearfix">
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3736" >冰雪</a>
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3742">火山</a>
-						   <a target="_blank" href="http://www.lotour.com/zhengwen/x4288">人少</a>
+						   <a target="_blank" href="http://www.lotour.com/zhengwen/x3736" >基督教</a>
 					   </p>
-					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28874.shtml" target="_blank">楚楚冻人的长白山天池</a></h5>
+					   <h5><a href="http://www.lotour.com/zhengwen/2/lg-jc-28874.shtml" target="_blank">圣母住过的小屋真的有？就在土耳其</a></h5>
 					   <p class="tool">
 						   <i class="icon iconfont icon-dingwei"></i>
-						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="长白山" >长白山</a>
-						   <i class="icon iconfont icon-yanjing">8092</i>
+						   <a href="http://daxinganling.lotour.com/beijicun1/" target="_blank" title="长白山" >土耳其</a>
+						   <i class="icon iconfont icon-yanjing">2.3万</i>
 					   </p>
 				   </li>
 			   </ul>
@@ -1395,84 +812,21 @@
 		   <section class="fl">
 			   <h6 class="fl-h6"><a href="http://zhuanlan.lotour.com/" target="_blank" title="每周优秀灵感旅行家推荐">每周优秀灵感旅行家推荐</a></h6>
 			   <ul class="fl-traveller">
-				   <li>
-					   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1202/2016120214003559818447_310.JPG">
-					   </a>
-					   <h5>
-						   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">冰水蓝</a>
-						   <p class="dy_nw2">
-							   <img src="http://img1.lotour.net/inspiration/dingyue/dy+.png" class="dy_pic">
-							   <i class="dy">订阅</i>
-						   </p>
-						   <p method="weekauthor" authorid="2421" class="dy_nw3">总阅读量：<span id="authorLgPv2421">340万+</span> 文章数：<span id="authorLgCount2421">24</span></p>
-					   </h5>
-				   </li>
-				   <li>
-					   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1202/2016120214003559818447_310.JPG">
-					   </a>
-					   <h5>
-						   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">冰水蓝</a>
-						   <p class="dy_nw2">
-							   <img src="http://img1.lotour.net/inspiration/dingyue/dy+.png" class="dy_pic">
-							   <i class="dy">订阅</i>
-						   </p>
-						   <p method="weekauthor" authorid="2421" class="dy_nw3">总阅读量：<span id="authorLgPv2421">340万+</span> 文章数：<span id="authorLgCount2421">24</span></p>
-					   </h5>
-				   </li>
-				   <li>
-					   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1202/2016120214003559818447_310.JPG">
-					   </a>
-					   <h5>
-						   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">冰水蓝</a>
-						   <p class="dy_nw2">
-							   <img src="http://img1.lotour.net/inspiration/dingyue/dy+.png" class="dy_pic">
-							   <i class="dy">订阅</i>
-						   </p>
-						   <p method="weekauthor" authorid="2421" class="dy_nw3">总阅读量：<span id="authorLgPv2421">340万+</span> 文章数：<span id="authorLgCount2421">24</span></p>
-					   </h5>
-				   </li>
-				   <li>
-					   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1202/2016120214003559818447_310.JPG">
-					   </a>
-					   <h5>
-						   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">冰水蓝</a>
-						   <p class="dy_nw2">
-							   <img src="http://img1.lotour.net/inspiration/dingyue/dy+.png" class="dy_pic">
-							   <i class="dy">订阅</i>
-						   </p>
-						   <p method="weekauthor" authorid="2421" class="dy_nw3">总阅读量：<span id="authorLgPv2421">340万+</span> 文章数：<span id="authorLgCount2421">24</span></p>
-					   </h5>
-				   </li>
-				   <li>
-					   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1202/2016120214003559818447_310.JPG">
-					   </a>
-					   <h5>
-						   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">冰水蓝</a>
-						   <p class="dy_nw2">
-							   <img src="http://img1.lotour.net/inspiration/dingyue/dy+.png" class="dy_pic">
-							   <i class="dy">订阅</i>
-						   </p>
-						   <p method="weekauthor" authorid="2421" class="dy_nw3">总阅读量：<span id="authorLgPv2421">340万+</span> 文章数：<span id="authorLgCount2421">24</span></p>
-					   </h5>
-				   </li>
-				   <li>
-					   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">
-						   <img src="http://img1.lotour.net/Inspiration/2016/1202/2016120214003559818447_310.JPG">
-					   </a>
-					   <h5>
-						   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">冰水蓝</a>
-						   <p class="dy_nw2">
-							   <img src="http://img1.lotour.net/inspiration/dingyue/dy+.png" class="dy_pic">
-							   <i class="dy">订阅</i>
-						   </p>
-						   <p method="weekauthor" authorid="2421" class="dy_nw3">总阅读量：<span id="authorLgPv2421">340万+</span> 文章数：<span id="authorLgCount2421">24</span></p>
-					   </h5>
-				   </li>
+				   <script type="text/html" id="pv">
+					   <li>
+						   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">
+							   <img src="http://img1.lotour.net/Inspiration/2016/1202/2016120214003559818447_310.JPG">
+						   </a>
+						   <h5>
+							   <a href="http://zhuanlan.lotour.com/2421" title="冰水蓝" target="_blank">冰水蓝</a>
+							   <p class="dy_nw2">
+								   <img src="http://img1.lotour.net/inspiration/dingyue/dy+.png" class="dy_pic">
+								   <i class="dy">订阅</i>
+							   </p>
+							   <p method="weekauthor" authorid="2421" class="dy_nw3">总阅读量：<span id="authorLgPv2421">{{LgPv}}</span> 文章数：<span id="authorLgCount2421">{{LgCount}}</span></p>
+						   </h5>
+					   </li>
+                   </script>
 			   </ul>
 			   <div class="lg-btn">
 				   <div class="btn-arrow">
@@ -1488,67 +842,131 @@
 			   <div class="bb">
 				   <h6><a href="http://zhuanlan.lotour.com/?type=1" target="_blank" title="旅游局专栏">旅游局专栏</a></h6>
 				   <ul>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','lvyouju');" target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','lvyouju');" target="_blank" href="http://zhuanlan.lotour.com/1470/" title="关岛观光局">关岛观光局</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','lvyouju');" target="_blank" href="http://zhuanlan.lotour.com/1586/" title="美国国家旅游局">美国国家旅游局</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','lvyouju');" target="_blank" href="http://zhuanlan.lotour.com/1666/" title="澳大利亚北领地">澳大利亚北领地</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','lvyouju');" target="_blank" href="http://zhuanlan.lotour.com/590/" title="肯尼亚旅游局">肯尼亚旅游局</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','lvyouju');" target="_blank" href="http://zhuanlan.lotour.com/1541/" title="日本国家旅游局">日本国家旅游局</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','lvyouju');" target="_blank" href="http://zhuanlan.lotour.com/1464/" title="洛阳市旅发委">洛阳市旅发委</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','lvyouju');" target="_blank" href="http://zhuanlan.lotour.com/1465/" title="瑞士琉森旅游局">瑞士琉森旅游局</a>
+					   </li>
 				   </ul>
 			   </div>
 			   <div class="bb">
-				   <h6><a href="http://zhuanlan.lotour.com/?type=1" target="_blank" title="旅游局专栏">旅游局专栏</a></h6>
+				   <h6><a href="http://zhuanlan.lotour.com/?type=1" target="_blank" title="旅游局专栏">媒体专栏</a></h6>
 				   <ul>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','meiti');" target="_blank" href="http://zhuanlan.lotour.com/32/" title="旅游世界">旅游世界</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','meiti');" target="_blank" href="http://zhuanlan.lotour.com/1392/" title="《旅游画刊》">《旅游画刊》</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','meiti');" target="_blank" href="http://zhuanlan.lotour.com/593/" title="中国国家旅游">中国国家旅游</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','meiti');" target="_blank" href="http://zhuanlan.lotour.com/78/" title="西藏人文地理">西藏人文地理</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','meiti');" target="_blank" href="http://zhuanlan.lotour.com/2523/" title="云游色摄影旅游网">云游色摄影旅游网</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','meiti');" target="_blank" href="http://zhuanlan.lotour.com/892/" title="香港湿地公园">香港湿地公园</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','meiti');" target="_blank" href="http://zhuanlan.lotour.com/1835/" title="栖客">栖客</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','meiti');" target="_blank" href="http://zhuanlan.lotour.com/145/" title="海峡旅游">海峡旅游</a>
+					   </li>
 				   </ul>
 			   </div>
 			   <div class="bb">
-				   <h6><a href="http://zhuanlan.lotour.com/?type=1" target="_blank" title="旅游局专栏">旅游局专栏</a></h6>
+				   <h6><a href="http://zhuanlan.lotour.com/?type=1" target="_blank" title="旅游局专栏">午后专栏</a></h6>
 				   <ul>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zhoumo');" target="_blank" href="http://zhuanlan.lotour.com/2283/" title="北京民族服饰博物馆">北京民族服饰博物馆</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zhoumo');" target="_blank" href="http://zhuanlan.lotour.com/2304/" title="一拙">一拙</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zhoumo');" target="_blank" href="http://zhuanlan.lotour.com/2278/" title="木木美术馆">木木美术馆</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zhoumo');" target="_blank" href="http://zhuanlan.lotour.com/2282/" title="飒骆复古单车高定">飒骆复古单车高定</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zhoumo');" target="_blank" href="http://zhuanlan.lotour.com/2301/" title="汪星客萌犬主题餐吧">汪星客萌犬主题餐吧</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zhoumo');" target="_blank" href="http://zhuanlan.lotour.com/2303/" title="S&amp;C">S&amp;C</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zhoumo');" target="_blank" href="http://zhuanlan.lotour.com/2138/" title="梧桐咖啡馆">梧桐咖啡馆</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zhoumo');" target="_blank" href="http://zhuanlan.lotour.com/2306/" title="南洋狮城咖啡文化工作">南洋狮城咖啡文化工作</a>
+					   </li>
 				   </ul>
 			   </div>
 			   <div class="bb">
-				   <h6><a href="http://zhuanlan.lotour.com/?type=1" target="_blank" title="旅游局专栏">旅游局专栏</a></h6>
+				   <h6><a href="http://zhuanlan.lotour.com/?type=1" target="_blank" title="旅游局专栏">自驾专栏</a></h6>
 				   <ul>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
-					   <li><a target="_blank" href="http://zhuanlan.lotour.com/2349/" title="迪拜旅游局">迪拜旅游局</a></li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zijia');" target="_blank" href="http://zhuanlan.lotour.com/1987/" title="车游天下">车游天下</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zijia');" target="_blank" href="http://zhuanlan.lotour.com/642/" title="北京携友同行自驾游">北京携友同行自驾游</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zijia');" target="_blank" href="http://zhuanlan.lotour.com/1012/" title="长久乐途车友会">长久乐途车友会</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zijia');" target="_blank" href="http://zhuanlan.lotour.com/133/" title="969自驾俱乐部">969自驾俱乐部</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zijia');" target="_blank" href="http://zhuanlan.lotour.com/1808/" title="敖兰嘎鲁旅行工作室">敖兰嘎鲁旅行工作室</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zijia');" target="_blank" href="http://zhuanlan.lotour.com/1491/" title="穿越国际自驾俱游乐部">穿越国际自驾俱游乐部</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zijia');" target="_blank" href="http://zhuanlan.lotour.com/136/" title="龙腾天下自驾游俱乐部">龙腾天下自驾游俱乐部</a>
+					   </li>
+					   <li>
+						   <a onclick="return FocusCount('zhuanlan','zijia');" target="_blank" href="http://zhuanlan.lotour.com/131/" title="丁丁猫汽车俱乐部">丁丁猫汽车俱乐部</a>
+					   </li>
 				   </ul>
 			   </div>
 		   </section>
 		   <!--热度排行榜-->
 		   <section class="fr">
 			   <h6 class="fr-h6">
-				   <a href="http://www.lotour.com/zhengwen/" class="fr-h6-on" target="_blank">灵感文昨日阅读量排行</a><span>|</span>
+				   <a href="http://www.lotour.com/zhengwen/" class="fr-h6-on day" target="_blank">灵感文昨日阅读量排行</a><span>|</span>
 				   <a href="http://www.lotour.com/zhengwen/" target="_blank" class="">月度阅读量排行</a>
 			   </h6>
 			   <ul class="frlist" id="daylist">
 				   <li>
 					   <i class="numlist one">1</i>
 					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
-						   叔啊，你真逗！美国体育城的漫漫冬夜
+						   云海翻腾中的金顶十方金佛
 					   </a>
 					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
 						   士俊
@@ -1777,8 +1195,237 @@
 				   </li>
 
 			   </ul>
-			   <ul class="frlist" id="monthlist">
-				   <li></li>
+			   <ul class="frlist" id="monthlist" style="display: none">
+				   <li>
+					   <i class="numlist one">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   行走于九份 这美丽的山城
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist two">2</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist three">3</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
+				   <li>
+					   <i class="numlist">1</i>
+					   <a target="_blank" href="http://www.lotour.com/zhengwen/2/lg-jc-26452.shtml" class="fr-tt" title="叔啊，你真逗！美国体育城的漫漫冬夜">
+						   叔啊，你真逗！美国体育城的漫漫冬夜
+					   </a>
+					   <a target="_blank" class="at" href="http://zhuanlan.lotour.com/2294" title="士俊">
+						   士俊
+					   </a>
+					   <span class="sn"><i class="icon iconfont icon-yanjing"></i>1373.7万</span>
+				   </li>
 			   </ul>
 		   </section>
 	   </article>
@@ -1871,6 +1518,41 @@
 			</a>
 		</div>
 	</footer>
-<script src="js/mousewheel.js"></script>
+	<!--其他工具组件-->
+	   <!--意见反馈-->
+	<div class="ltfeeback"></div>
+	   <!--意见反馈提交框-->
+	<!--背景幕-->
+	<div class="ltfeebbg"></div>
+	<!--对话框-->
+	<div class="ltfeebin">
+		<a href="javascript:void(0)" class="close"></a>
+		<h5>意见反馈</h5>
+		<div class="con">
+			<textarea tips="亮出你的毒舌，晒晒你的想法，叨叨你的建议 ，让乐途为你更完美！">亮出你的毒舌，晒晒你的想法，叨叨你的建议 ，让乐途为你更完美！</textarea>
+			<a href="javascript:void(0)" class="send">提交</a>
+			<p class="tip">嗨，写点什么吧</p>
+	</div>
+	</div>
+	<!--广告侧边按钮-->
+	<a href="#" class="bt-ad-btn"></a>
+	<!--广告侧边	-->
+	<div class="bt-ad">
+		<div class="ad-in">
+			<a href="#" class="cls"></a>
+			<a href="http://adclient.lotour.com/Forms/comment/adurl.aspx?id=6912" class="link" target="_blank"></a>
+		</div>
+		<div class="adv">
+			<span>广告</span>
+		</div>
+	</div>
+	<script src="js/home_ajax_HomeInterest.js"></script>
+	<script src="js/home_ajax_HomeInSide.js"></script>
+	<script src="js/home_ajax_pv.js"></script>
+	<script src="js/home_lunbo.js"></script>
+    <script src="js/home_huaping.js"></script>
+    <script src="../common_js/mousewheel.js"></script>
+    <script src="js/home_paihan.js"></script>
+    <script src="js/home_zhujian.js"></script>
 </body>
 </html>

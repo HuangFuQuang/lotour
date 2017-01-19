@@ -1,13 +1,7 @@
 /*首页滚屏样式*/
-.onHtml{
-    height: 100%;
-}
-.onBody{
-    overflow: hidden;
-}
-.onpage{
 
-}
+section .index-inspire{position: absolute;left: 0;width: 100%;}
+#mu{width: 100%;height: 2000px;}
 section .index-inspire .page1{background-image: url(http://img1.lotour.net/Home/2016/1230/20161230112727088d1.jpg);width: 100%;
 height:600px;background-size: cover;background-position: top center;  overflow: hidden;position: relative;
 }
@@ -48,3 +42,20 @@ section .index-inspire2 .page2{background: url(http://img1.lotour.net/2016/index
 section .index-inspire2 .page3{background: url(http://img1.lotour.net/2016/index/yindao/yindao-bg_3.jpg) repeat center;}
 section .index-inspire2 .page4{background: url(http://img1.lotour.net/2016/index/yindao/yindao-bg_4.jpg) repeat center;}
 section .index-inspire2 .page5{background: url(http://img1.lotour.net/2016/index/yindao/yindao-bg_1.jpg) repeat center;}
+.onHtml{
+    height: 100%;
+}
+.onBody{
+    width: 100%;height: 100%;
+}
+.onPage{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+}
+.onPage1{
+    position: fixed;
+    top:0;
+}

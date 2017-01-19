@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+    <style type="text/css">
+        div{height: 500px;background: gray}
+        button{position: fixed;top: 0;}
+    </style>
+    <script src="../common_js/jquery-3.1.0.js"></script>
+</head>
+<body>
+<button>点击</button>
+<div>111111</div>
+<div>2222</div>
+<div>33333</div>
+<div>wswdwdwd</div>
+<div>333dwdefefefefff33</div>
+</body>
+<script>
+    var num=500
+    var lock=true;
+
+    $(document).scroll(function () {
+//        console.log($(this).scrollTop())
+        if(lock&&$(this).scrollTop()>=500) {
+//            $("body,html").animate({scrollTop: num+=100}, 1500);//回到顶端
+            $(this).scrollTop(num+=300);
+            lock=false;
+            setTimeout(function () {
+                lock=true
+            },1000);
+            console.log($(window).scrollTop())
+            console.log(num)
+        }
+
+    })
+    $("button").click(function () {
+
+//        var a = $(this).scrollTop();
+//        if (num=10){$("body").css("scrollTop",0);num+=10;}else {
+        $("body").animate({scrollTop:num+=150},1000);//回到顶端//
+        console.log($("body").css("scrollTop"))
+
+
+        return false
+    })
+</script>
+</html>

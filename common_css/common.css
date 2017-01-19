@@ -22,4 +22,28 @@ sub{ vertical-align:text-bottom; }
 legend { color:#000; } 
 fieldset, img { border:0; } 
 button, input, select, textarea { font-size:100%; } 
-table { border-collapse:collapse; border-spacing:0; } 
+table { border-collapse:collapse; border-spacing:0; }
+/*底部版权区*/
+footer{height: 285px;background: rgb(34, 36, 48);}
+footer .idx-footer-bg{height: 200px;border-bottom: 1px solid rgb(85,85,85);padding: 10px 5px 0 5px;box-sizing: border-box}
+footer .idx-footer-bg .footer-fl{width:67%;float: left;padding-top: 50px;padding-left:20px;box-sizing: border-box}
+footer .idx-footer-bg .footer-fr{width: 33%;float: left;padding-top: 50px;}
+footer .idx-footer-bg .footer-fl dl{float: left;width: 130px;}
+footer .idx-footer-bg .footer-fl dl dt,footer .idx-footer-bg .footer-fl .hb div,footer .idx-footer-bg .footer-fr .follow div,footer .idx-footer-bg .footer-fr .wechat div
+{color: rgb(153, 153, 153);  font-family: 微软雅黑;  font-size: 14px;}
+footer .idx-footer-bg .footer-fl dl dd a,footer .idx-footer-bg .footer-fl .hb p a{color: rgb(102, 102, 102);  cursor: auto;  font-size: 14px;}
+footer .idx-footer-bg .footer-fl a:hover,footer .idx-footer-bg .footer-fl .hb p a:hover{color: rgb(236, 105, 9);}
+footer .idx-footer-bg .footer-fr .follow{width: 100px;height:99px; }
+footer .idx-footer-bg .footer-fr .follow div,footer .idx-footer-bg .footer-fr .wechat div{margin-bottom: 10px;}
+footer .idx-footer-bg .footer-fr .follow ul{width: 100%;}
+footer .idx-footer-bg .footer-fr .follow ul li{width: 26px;height: 26px;float: left;margin-right: 6px;margin-top: 5px;}
+footer .idx-footer-bg .footer-fr .follow ul li a{width: 100%;height: 100%;display: block;background: url(http://img1.lotour.net/index/sprite.png) no-repeat;}
+footer .idx-footer-bg .footer-fr .follow ul .sina a{background-position: 0 -29px;}
+footer .idx-footer-bg .footer-fr .follow ul .qzone a{background-position: -32px -29px;}
+footer .idx-footer-bg .footer-fr .follow ul .renren a{background-position: -64px -29px;}
+footer .idx-footer-bg .footer-fr .follow ul .qqweibo a{background-position: 0 -61px;}
+footer .idx-footer-bg .footer-fr .follow ul .wechat a{background-position: -32px -61px;}
+footer .idx-footer-bg .footer-fr .follow,footer .idx-footer-bg .footer-fr .wechat{float: left;margin-right: 20px}
+footer .idx-footer-bq{padding:20px 10px 0 10px;box-sizing: border-box}
+footer .idx-footer-bq .flogo{display: block;float: left}footer .idx-footer-bq .plc{float: right;display: block;margin-right: 10px;}
+footer .idx-footer-bq p{float: left;margin-left: 50px;}footer .idx-footer-bq p a,footer .idx-footer-bq p{font-size: 12px;color: rgb(102,102,102)}

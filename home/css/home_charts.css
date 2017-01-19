@@ -1,13 +1,13 @@
 /*热度排行榜样式*/
-section .index-friend-item{height: 1100px;background: rosybrown;margin-top: 70px;}
-section .index-friend-item .fl{width: 55%;background: gold;height: 955px;float: left}
-section .index-friend-item .fr{width: 45%;background: greenyellow;height: 955px;float: left}
+section .index-friend-item{height: 1200px;margin-top: 70px;}
+section .index-friend-item .fl{width: 55%;height: 955px;float: left}
+section .index-friend-item .fr{width: 45%;height: 955px;float: left}
 section .index-friend-item .fl .fl-h6{font: 22px/30px "Microsoft YaHei";margin-bottom: 20px;}
 section .index-friend-item .fl .fl-h6 a{color: #333;}
 section .index-friend-item .fl .fl-traveller{width: 100%;height: auto;}
 section .index-friend-item .fl .fl-traveller li{width: 50%;height:60px;padding: 5px;position: relative;float: left;box-sizing: border-box;margin-top: 20px;}
 section .index-friend-item .fl .fl-traveller li img{ border-radius: 100%;  width: 60px;  height: 60px;}
-section .index-friend-item .fl .fl-traveller li h5{width: 188px;height: 45px;background: red;position: absolute;top:10px;left: 75px;}
+section .index-friend-item .fl .fl-traveller li h5{width: 188px;height: 45px;position: absolute;top:10px;left: 75px;}
 section .index-friend-item .fl .fl-traveller li h5 a{color: rgb(51, 51, 51);  cursor: auto;  display: block;  float: left;
      font-size: 16px;}
 section .index-friend-item .fl .fl-traveller li h5 .dy_nw2{float: right;color: #f90;}
@@ -16,7 +16,7 @@ section .index-friend-item .fl .fl-traveller li h5 .dy_nw2 .dy{font-style: norma
 section .index-friend-item .fl .fl-traveller li h5 .dy_nw3{float: left;color: rgb(153, 153, 153);
    font-size: 12px;font-style: normal;margin-top: 5px;}
 section .index-friend-item .fl .fl-traveller li h5 .dy_nw3 span{color: rgb(51,51,51);font-style: normal;font-weight: normal;margin-right: 5px;}
-section .index-friend-item .fl .lg-btn{width: 500px;height: 67px;margin: 0 auto;background: red;clear: both;margin-top: 320px;margin-bottom: 50px;}
+section .index-friend-item .fl .lg-btn{width: 500px;height: 67px;margin: 0 auto;clear: both;margin-top: 320px;margin-bottom: 150px;}
 section .index-friend-item .fl .lg-btn .btn-arrow{width: 50%;float: left;margin-top: 10px;}
 section .index-friend-item .fl .lg-btn .btn-arrow a{display: block;width: 162px;height: 35px;border: 1px solid #d3d3d3;margin: 0 auto;
     text-align: center; color: #969696;  background: #fff;  border-radius: 3px;line-height: 35px;
@@ -37,13 +37,13 @@ section .index-friend-item .fr .fr-h6 a{font-size: 22px;color: #adadad;}
 section .index-friend-item .fr .fr-h6 .fr-h6-on{color: #333;}
 section .index-friend-item .fr .fr-h6 span{margin: 0 10px;font-size: 22px;font-weight: lighter;color: #adadad;}
 section .index-friend-item .fr .frlist{width: 100%;height: auto}
-section .index-friend-item .fr .frlist li{height: 38px;margin-top:2px;}
+section .index-friend-item .fr .frlist li{height: 38px;margin-top:5px;}
 section .index-friend-item .fr .frlist li .numlist{width: 13px;height: 15px;display: block;background: #cacaca;color: white;
     font-family: "Arail";  font-size: 13px;line-height: 15px;border-radius: 2px;float: left;margin-top: 12px;margin-right: 10px;
 }
 
 /*自动转成块状元素,并且宽度自动*/
-section .index-friend-item .fr .frlist li .fr-tt{background: rosybrown;color: #333;display: block;max-width: 55%;height:38px;
+section .index-friend-item .fr .frlist li .fr-tt{color: #333;display: block;max-width: 55%;height:38px;
     line-height:38px;float: left;overflow: hidden}
 section .index-friend-item .fr .frlist li .at{color: #999;display: block;float: left;font-size: 12px;margin-top: 12px;
     padding-left: 15px;max-width: 80px;overflow: hidden}
